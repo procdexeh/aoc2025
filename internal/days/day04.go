@@ -99,11 +99,12 @@ func (d *Day04) Part2(input string) any {
 				}
 			}
 		}
+
 		if changed == sum {
 			break
-		} else {
-			grid = pending_grid
 		}
+
+		grid = pending_grid
 	}
 
 	return sum
